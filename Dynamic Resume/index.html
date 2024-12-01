@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <h1>Dynamics Resume Builder By Nayab Aslam </h1>
+        </header>
+        <form id="resume-form">
+            <fieldset>
+                <legend>Personal Information </legend>
+                <label for="name"> Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" name="name" required><br>
+
+                <label for="email"> Email:</label>
+                <input type="email" id="email"  placeholder="Enter your email"    name="email" required><br>
+
+                <label for="phone"> Phone:</label>
+                <input type="tel" id="phone" placeholder="Enter your phone no."  name="phone" required><br>
+
+            </fieldset>
+            <!-- Education -->
+            <fieldset>
+                <legend> Education</legend>
+                <label for="education">Education</label>
+                <textarea id="education" placeholder="Enter your Education" name="education" rows="4"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend> Experience</legend>
+                <label for="experience">Experience</label>
+                <textarea id="experience" placeholder="Enter your experience" name="experience" rows="4"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend> Skills</legend>
+                <label for="skills">Skills</label>
+                <textarea id="skills "  placeholder="Enter your skills" name="skills" rows="4"></textarea>
+            </fieldset>
+
+            <button type="submit">Generate Resume </button>
+        </form>
+<br>
+        <div id="resume-display">
+            <!-- resume generated -->
+        </div>
+
+        <footer class="footer">
+
+            <div class="social">
+        
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-whatsapp'></i></i></a>
+        
+            </div>
+            <p class="copyright">
+             &copy; Nayab Aslam | All Right Reserve
+            </p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
